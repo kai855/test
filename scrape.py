@@ -8,21 +8,6 @@ pages = {
 }
 
 
-headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36"
-}
-response = requests.get(url, headers=headers, timeout=10, verify=False)
-soup = BeautifulSoup(response.text, "html.parser")
-title = soup.title.string if soup.title else "No Title"
-
-filename = f"content-{datetime.now().strftime('%Y-%m-%d')}.txt"
-
-with open(filename, "w", encoding="utf-8") as f:
-    f.write(f"Title: {title}\n")
-    f.write("Page content:\n")
-    f.write(response.text)  
-
-
 for name, url in pages.items():
     print(f"正在抓取: {url}")
     headers = {
