@@ -24,14 +24,9 @@ jobs:
 
       - name: 运行爬虫脚本
         run: |
-          python scrape.py
+          python scrape.py  # 假设输出到 content.txt
 
-      - name: 打包抓取内容为 zip
-        run: |
-          date=$(date +%Y-%m-%d)
-          zip content-$date.zip content-*.txt
-
-      - name: 获取当前日期作为版本号
+      - name: 获取当前日期
         id: vars
         run: echo "DATE=$(date +%Y-%m-%d)" >> $GITHUB_ENV
 
@@ -46,4 +41,4 @@ jobs:
           draft: false
           prerelease: false
           files: |
-            content-*.zip
+            content.txt
