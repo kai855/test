@@ -24,7 +24,7 @@ jobs:
 
       - name: 运行爬虫脚本
         run: |
-          python scrape.py  # 假设输出到 content.txt
+          python scrape.py  # 抓取多个网页并输出到 content.txt 或多个文件
 
       - name: 获取当前日期
         id: vars
