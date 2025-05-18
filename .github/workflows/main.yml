@@ -41,9 +41,7 @@ jobs:
           tag_name: daily-$DATE
           release_name: Daily Content Update - $DATE
           body: |
-            自动抓取的订阅内容：
-            - page1.txt
-            - page2.txt
+            1
           draft: false
           prerelease: false
           files: |
