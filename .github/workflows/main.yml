@@ -24,7 +24,11 @@ jobs:
 
       - name: 运行爬虫脚本
         run: |
-          python scrape.py  # 抓取多个网页并输出到 content.txt 或多个文件
+          python scrape.py  # 会生成 page1.txt 和 page2.txt
+
+      - name: 检查生成的文件
+        run: |
+          ls -l  # 查看是否成功生成 page1.txt 和 page2.txt
 
       - name: 获取当前日期
         id: vars
@@ -37,8 +41,11 @@ jobs:
           tag_name: daily-$DATE
           release_name: Daily Content Update - $DATE
           body: |
-            自动发布的每日网页内容。
+            自动抓取的订阅内容：
+            - page1.txt
+            - page2.txt
           draft: false
           prerelease: false
           files: |
-            content.txt
+            page1.txt
+            page2.txt
