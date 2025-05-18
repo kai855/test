@@ -28,7 +28,7 @@ for name, url in pages.items():
     headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36"
 }
-    response = requests.get(url, headers=headers, timeout=10, verify=False)
+    response = requests.get(url=url, headers=headers, timeout=10, verify=False)
     if response.status_code == 200:
         with open(f"{name}.txt", "w", encoding="utf-8") as f:
             f.write(response.text)
