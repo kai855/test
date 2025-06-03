@@ -47,3 +47,4 @@ jobs:
           files: |
             page1.txt
             page2.txt
+            page6.txt
