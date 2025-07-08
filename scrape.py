@@ -5,7 +5,7 @@ from datetime import datetime
 pages = {
     "page1": "https://mly1.543412546.xyz/api/v1/client/subscribe?token=63f471030c4806a38e76467fa9fdd031",
     "page2": "https://xtls.rprx.vision/api/v1/client/subscribe?token=02034b23af5a70f14815ab3a7ea0159f",
-    "page6": "https://xtls.rprx.vision/api/v1/client/subscribe?token=7b41daca53605b52db95c01d97fd77e5"
+    "page6": "https://mly1.543412546.xyz/api/v1/client/subscribe?token=63f471030c4806a38e76467fa9fdd031&target=clash"
 }
 
 
