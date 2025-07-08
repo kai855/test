@@ -1,0 +1,50 @@
+name: 每日抓取并发布clash Release
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # UTC 时间每天凌晨 0 点运行
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: 安装依赖
+        run: |
+          pip install -r requirements.txt
+
+      - name: 运行爬虫脚本
+        run: |
+          python scrape.py  # 会生成 page1.txt 和 page2.txt
+
+      - name: 检查生成的文件
+        run: |
+          ls -l  # 查看是否成功生成 page1.txt 和 page2.txt
+
+      - name: 获取当前日期
+        id: vars
+        run: echo "DATE=$(date +%Y-%m-%d)" >> $GITHUB_ENV
+
+      - name: 创建或更新 Release
+        uses: softprops/action-gh-release@v1
+        if: github.ref == 'refs/heads/main'
+        with:
+          tag_name: daily-$DATE
+          release_name: Daily clash Update - $DATE
+          body: |
+            1
+          draft: false
+          prerelease: false
+          files: |
+            page1.txt
+            page2.txt
+            page6.txt
