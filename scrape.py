@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 
-pages1 = {
+pages = {
     "page1": "",
     "page11": "https://ml11.hfhfb.homes/api/v1/client/subscribe?token=1023232a61975e5745e60aaaae61e0ca",
     "page2": " https://fsc.wangpankehuduan.homes/answer/land?token=aca6749abfc0ee0cd4bdf23e1a04c338",
