@@ -2,12 +2,14 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 
-pages = {
-    "page1": "https://ml11.hfhfb.homes/api/v1/client/subscribe?token=1023232a61975e5745e60aaaae61e0ca",
-    "page2": " https://xtls.rprx.vision/api/v1/client/subscribe?token=a49c8d24c16f8295952c716fdbaa4280",
+
+pages1 = {
+    "page1": "",
+    "page11": "https://ml11.hfhfb.homes/api/v1/client/subscribe?token=1023232a61975e5745e60aaaae61e0ca",
+    "page2": " https://fsc.wangpankehuduan.homes/answer/land?token=aca6749abfc0ee0cd4bdf23e1a04c338",
+    "page22": " https://xtls.rprx.vision/api/v1/client/subscribe?token=a49c8d24c16f8295952c716fdbaa4280",
     "page6": "https://mly1.543412546.xyz/api/v1/client/subscribe?token=63f471030c4806a38e76467fa9fdd031&target=clash"
 }
-
 
 for name, url in pages.items():
     print(f"正在抓取: {url}")
