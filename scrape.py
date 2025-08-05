@@ -5,8 +5,8 @@ from datetime import datetime
 
 pages = {
     "page1": "https://mly1.543412546.xyz/api/v1/client/subscribe?token=63f471030c4806a38e76467fa9fdd031&target=clash",
-    "page2": "https://ml11.hfhfb.homes/api/v1/client/subscribe?token=1023232a61975e5745e60aaaae61e0ca",
-    "page22": " https://xtls.rprx.vision/api/v1/client/subscribe?token=a49c8d24c16f8295952c716fdbaa4280",
+    "page11": "https://ml11.hfhfb.homes/api/v1/client/subscribe?token=1023232a61975e5745e60aaaae61e0ca",
+    "page2": "https://sub2.qingze-quick.top/api/v1/client/subscribe?token=3f54ed2937d5b264dac23b2c4bb54a55",
     "page6": "https://mly1.543412546.xyz/api/v1/client/subscribe?token=63f471030c4806a38e76467fa9fdd031&target=clash"
 }
 
