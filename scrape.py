@@ -6,7 +6,7 @@ from datetime import datetime
 pages = {
     "page1": "https://mly1.543412546.xyz/api/v1/client/subscribe?token=63f471030c4806a38e76467fa9fdd031&target=clash",
     "page11": "https://ml11.hfhfb.homes/api/v1/client/subscribe?token=1023232a61975e5745e60aaaae61e0ca",
-    "page2": "https://aq.muguacloud.shop/api/v1/client/subscribe?token=75efeb47121f0ee476f0ece8444565f6",
+    "page2": "https://www.carpetpacific.com/blanket/api/v1/client/subscribe?token=0c0a9b11882fab0352b31314f039ea6c",
     "page6": "https://mly1.543412546.xyz/api/v1/client/subscribe?token=63f471030c4806a38e76467fa9fdd031&target=clash"
 }
 
