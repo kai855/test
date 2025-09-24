@@ -2,7 +2,7 @@ name: 每日抓取并发布 Release
 
 on:
   schedule:
-    -- cron: '0 0 * * *'  # UTC 时间每天凌晨 0 点运行
+    - cron: '0 0 * * *'  # UTC 时间每天凌晨 0 点运行
   workflow_dispatch:
 
 jobs:
